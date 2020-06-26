@@ -1,4 +1,4 @@
-test("Missing color name. Error thrown", ()=>{
+test("Missing visit url. Error thrown", ()=>{
 
     try{
         
@@ -11,7 +11,7 @@ test("Missing color name. Error thrown", ()=>{
     
 });
 
-test("Present color name", ()=>{
+test("Present url", ()=>{
     
     // try code
     
