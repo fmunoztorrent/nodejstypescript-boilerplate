@@ -27,4 +27,4 @@ services:
             - '8082:80'
         environment:
             PMA_HOST: 'nodejstypescriptmysql'
-            MYSQL_ROOT_PASSWORD: 'password'            
+            MYSQL_ROOT_PASSWORD: 'password'

@@ -1,10 +1,10 @@
 import getVisits from './getVisits';
 import getVisit from './getVisit';
-import { VisitMySQLRepository } from '../../Infrastructure/Repositories/VisitMySQLRepository';
+import { VisitMsSQLRepository } from '../../Infrastructure/Repositories/VisitMsSqlRepository';
 
-const mysqlColorRepo = new VisitMySQLRepository();
+const visitsRepo = new VisitMsSQLRepository();
 
-const getVisitUseCase = getVisit(mysqlColorRepo);
-const getVisitsUseCase = getVisits(mysqlColorRepo);
+const getVisitUseCase = getVisit(visitsRepo);
+const getVisitsUseCase = getVisits(visitsRepo);
 
 export { getVisitUseCase as getVisit, getVisitsUseCase as getVisits}

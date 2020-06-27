@@ -1,8 +1,8 @@
 import newVisit from './newVisit';
-import { VisitMySQLRepository } from '../../Infrastructure/Repositories/VisitMySQLRepository';
+import { VisitMsSQLRepository } from '../../Infrastructure/Repositories/VisitMsSqlRepository';
 
-const mysqlVisitRepo = new VisitMySQLRepository();
+const visitRepo = new VisitMsSQLRepository();
 
-const newVisitUseCase = newVisit(mysqlVisitRepo);
+const newVisitUseCase = newVisit(visitRepo);
 
 export { newVisitUseCase as newVisit}
